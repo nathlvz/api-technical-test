@@ -1,0 +1,20 @@
+server:
+  port: 9090
+  
+spring:
+  banner:
+    charset: UTF-8
+    location: classpath:assets/banner/development.txt
+  data:
+    mongodb:
+      uri: mongodb://demousr:Zky8Lu3@localhost:9000/bd_technicaltest?authSource=admin
+  
+security:
+  roles:
+    no-role: NO_ROLES
+    
+finerio-services:
+  api: https://api.finerio.mx/api
+  login: /login
+  me: /me
+  movements: /users/{userId}/movements
